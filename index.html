@@ -1,75 +1,762 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Myweb by liye111111</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="Pragma" content="no-cache" />
+<title>総合TBR - ina tekken wiki</title>
+<link rel="canonical" href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TBR" />
+<meta name="keywords" content="鉄拳7,FATED RETRIBUTION,7FR,鉄拳タッグトーナメント,技表,確反,鉄拳,フレーム,コンボ,コマンド,tekken" />
+<meta name="description" content="ナムコの対戦格闘ゲーム「鉄拳シリーズ」のフレーム表、確反、コンボ、リスクなどをまとめた情報サイト" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta property="og:type"        content="website"/> 
+<meta property="og:title"       content="総合TBR - ina tekken wiki"/> 
+<meta property="og:url"  content="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TBR"/> 
+<meta property="og:description" content="ナムコの対戦格闘ゲーム「鉄拳シリーズ」のフレーム表、確反、コンボ、リスクなどをまとめた情報サイト" />
+<meta property="og:site_name"   content="ina tekken wiki"/>
+<meta property="og:image" content="http://wiki.seesaa.jp/img/ogp.png"/>
+<meta property="fb:app_id" content="615529258515288"/>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://seesaawiki.jp/w/inatekken/site.rdf" />
+<link rel="stylesheet" href="http://image01.seesaawiki.jp/css/usr/common.css?0.6.7" type="text/css" media="all" />
+<link rel="stylesheet" href="http://image01w.seesaawiki.jp/i/n/inatekken/site.css?2-2" type="text/css" media="all" />
+<link rel="stylesheet" href="http://image02.seesaawiki.jp/css/usr/ads.css?0.6.7" type="text/css" media="all" />
+<link rel="stylesheet" href="http://static.seesaawiki.jp/js/wiki_plugin/tablesorter/themes/pc/style.css?0.6.7" type="text/css" media="all" />
+<link rel="stylesheet" href="http://image01w.seesaawiki.jp/i/n/inatekken/overwrite.css" type="text/css" media="all" /><link rel="alternate" media="only screen and (max-width: 640px)" type="text/html"  href="http://seesaawiki.jp/w/inatekken/lite/d/%c1%ed%b9%e7TBR" >
+<link rel="alternate" media="handheld" type="text/html" href="http://m.seesaawiki.jp/w/inatekken/wiki/%91%8d%8d%87TBR" />
+<meta name="generated" content="2016-02-16 18:34:59" />
+<meta name="x-cluster" content="1" />
+<script language="JavaScript" type="text/javascript" src="http://static.seesaawiki.jp/js/jquery/jquery.js?0.6.7"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.seesaawiki.jp/js/jquery/jquery.textChangeEvent.js?0.6.7"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.seesaawiki.jp/js/jquery/jquery.cookie.js?0.6.7"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.seesaawiki.jp/js/wiki_plugin/tablesorter/jquery.tablesorter.min.js?0.6.7"></script>
+<script>jQuery.cookie.json = true;
+jQuery(document).ready(function($){
+  $("table.sort.edit").each(function(){
+    $(this).tablesorter({
+      headers: { 
+         '-1': { sorter: false  }
+      }
+    });
+  });
+  $("table.sort").not("table.edit").tablesorter();
+  $("table.filter").each(function(i){
+    var id = 'table-filter-' + i;
+    var $table = $(this);
+    $table.before('<div class="input-table-filter"><input type="text" id="' + id +'" placeholder="キーワードで絞り込み" /></div>');
+    $('#' + id).textChange({
+      change: function(ele) {
+        var input_str = ($(ele).val() + '').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
 
-  </head>
-  <body>
+        $table.find('tbody > tr').each(function(){
+          var $tr = $(this);
+          var re = new RegExp(input_str);
+          if( re.test($tr.text()) == false ) {
+            $tr.hide();
+          }else{
+            $tr.show();
+          }
+        });
+      }
+    });
+  });
+});
+</script>
+<link rel="stylesheet" href="http://image02.seesaawiki.jp/css/prettify.css?0.6.7" type="text/css" />
+<script language="JavaScript" type="text/javascript" src="http://static.seesaawiki.jp/js/prettify.js?0.6.7"></script>
 
-      <header>
-        <h1>Myweb</h1>
-        <p>github page test</p>
-      </header>
+<script type="text/javascript" src="http://static.seesaawiki.jp/js/wikisense.js?0.6.7"></script> 
 
-      <div id="banner">
-        <span id="logo"></span>
+<script language="JavaScript" type="text/javascript" src="http://static.seesaawiki.jp/js/usr/second/wikier.js?0.6.710"></script>
 
-        <a href="https://github.com/liye111111/myweb" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/liye111111/myweb/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/liye111111/myweb/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a id="--welcome-to-github-pages" class="anchor" href="#--welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>### ### Welcome to GitHub Pages.</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<script language="JavaScript" type="text/javascript">
+jQuery(function () {
+  var hash_old = "";
+  setInterval(function () {
+    var hash = location.hash.slice(1) || "";
+    if ( hash && ( hash != hash_old ) ) {
+      setTimeout(function () {
+        var top = document.documentElement.scrollTop || document.body.scrollTop;
+        window.scrollTo(0, top - Math.min(top, 38));
+        hash_old = hash;
+      }, 1);
+    } else if ( !hash ) {
+      hash_old = "";
+    }
+  }, 200);
+});
+</script>
+</head>
+<body class="layout-2">
+<div id="pagetop"></div>
+<div id="container">
+<!-- google_ad_section_start(name=s1) -->
+<div id="wiki-container" class="side-on">
+<div id="wiki-header"><div class="column-inner"><div class="column-inner-2"><div class="column-inner-3"><div id="wiki-title"><h1><a href="http://seesaawiki.jp/w/inatekken/">ina tekken wiki</a></h1></div>
+<div id="wiki-description"><p>ナムコの対戦格闘ゲーム「鉄拳シリーズ」のフレーム表、確反、コンボ、リスクなどの情報サイト</p></div>
+</div><!-- /.column-innder-3 --></div><!-- /.column-innder-2 --></div><!-- /.column-innder --></div><!-- /#wiki-header -->
+<div id="wiki-menu">
+<div class="box-inner">
+<ul id="navigation-m">
+<li class="top"><a href="http://seesaawiki.jp/w/inatekken/">トップページ</a></li><li class="list"><a href="http://seesaawiki.jp/w/inatekken/l/">ページ一覧</a></li><li class="member"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/members/" title="メンバー一覧">メンバー</a></li><li class="bbs"><a href="http://seesaawiki.jp/w/inatekken/bbs/">掲示板</a></li><li class="edit"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/edit?id=541688" title="編集（livedoor IDのログインが必要です）">編集</a></li>
+</ul>
+<p><a rel="nofollow" href="http://cms.wiki.seesaa.jp/wiki/member/apply?wiki_id=5021"><img src="http://image02.seesaawiki.jp/img/usr_second/common/bt_apply.gif?0.6.7" width="100" height="20" alt="このWikiに参加する" /></a></p>
+<div class="search-box">
+<form action ="http://seesaawiki.jp/w/inatekken/search" method="get">
+<ul>
+<li><input type="text" name="keywords" value="" class="form-text" /></li><li><input type="submit" value="検索" class="form-button" /></li>
+</ul>
+</form>
+</div><!-- /.search-box -->
+</div><!-- /.box-inner -->
+</div><!-- /#wiki-menu -->
+<div id="wiki-content">
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<div id="main" class="page-index">
+<div id="main-inner" class="column-inner">
+<div id="page-container">
+<div id="page-container-inner" class="box-inner">
+<div id="page-header">
+<div id="page-header-inner" class="box-inner">
+<div class="title">
+<div class="inner">
+<h2>
+総合TBR<a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/edit?id=541688" title="編集（livedoor IDのログインが必要です）"><img src="http://image02.seesaawiki.jp/img/usr_second/common/icon_edit.png?0.6.7" width="16" height="16" alt="編集する" /></a>
+</h2>
+</div><!-- /inner -->
+</div><!-- /.title -->
+<p class="update">最終更新：
+<img src="http://image01.seesaawiki.jp/img/profile_icon/default-16.png" alt="asdf0055" />
+<a href="http://seesaawiki.jp/w/inatekken/r/?u=asdf0055">asdf0055</a>&nbsp;2016年01月28日(木) 22:49:15<span class="history"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/hist/%c1%ed%b9%e7TBR">履歴</a></span></p>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<div id="page-social-link-top">
+  <ul>
+    <li class="google-plus">
+      <div class="g-plusone" data-size="medium"></div>
+      <script type="text/javascript">
+        window.___gcfg = {lang: 'ja'};
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
+    </li>
+    <li class="facebook">
+      <iframe src="//www.facebook.com/plugins/like.php?href=http%3a//seesaawiki%2ejp/w/inatekken/d/%25c1%25ed%25b9%25e7TBR&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=615529258515288" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+    </li>
+    <li class="twitter">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TBR" data-count="horizontal" data-lang="ja">Tweet</a>
+      <script async type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </li>
+  </ul>
+</div><!-- /page-social-link-top -->
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+</div><!-- /.box-inner -->
+</div><!-- /#page-header -->
+<div id="page-body">
+<div id="page-body-inner" class="box-inner">
+<script type="text/javascript" src="http://static.seesaawiki.jp/js/rainman.js"></script>
+<script type="text/javascript" >
+    var rainman = new Rainman("w/inatekken",5021,"http://static.seesaawiki.jp/img/rainman.gif",9,3311);
+    rainman.articleCount(541688);
+</script>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/liye111111">liye111111</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
+
+<div class="user-area">
+<b>※</b>：ここではアーケード版、鉄拳6 BLOODLINE REBELLIONを取り扱っています（<span style="color:#ff0000;">家庭用鉄拳6、鉄拳 3D PRIME EDITION<a href="#footer-footnote1" name="footnote1" title="平八を除く">*1</a>含む</span>）<br />
+<a href="http://www.avoidingthepuddle.com/tekken-6-frame-data/" class="outlink" rel="nofollow">Tekken 6 Frame Data - Avoiding The Puddle</a> for English Ver.<br />
+<hr size="1" noshade="noshade" />
+<table id="content_block_2"><tbody><tr><th>総合TBR</th><td><a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbTBR">基本技</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbTBR">固有技</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abTBR">投げ技ほか</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcTBR">コンボ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2TBR">確定反撃</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afTBR">リスク</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2TBR">主要技解説</a></td></tr></tbody></table>
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1">キャラ別</a></li>
+<li class="list-1"><a href="#content_2">総合の見方</a></li>
+<li class="list-1"><a href="#content_3">その他、備考</a></li>
+
+</ul>
+</div>
+</div>
+<br />
+<div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_1">キャラ別 <a title="部分編集" href="http://seesaawiki.jp/w/inatekken/e/edit?id=541688&part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="http://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif" /></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+キャラ紹介や10連コンボ、ちょっとしたメモを記載<br />
+<table id="content_block_4"><tbody><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%e9%a1%bc%a5%b9TBR">ラース</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%a2%a5%ea%a5%b5TBR">アリサ</a></td><td></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ec%a5%aaTBR">レオ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b6%a5%d5%a5%a3%a1%bc%a5%caTBR">ザフィーナ</a></td></tr><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%df%a5%b2%a5%ebTBR">ミゲル</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%dc%a5%d6TBR">ボブ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%bf%ceTBR">仁</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%b0%ec%c8%acTBR">一八</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%c8%f4%c4%bbTBR">飛鳥</a></td></tr><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%eaTBR">リリ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%d5%a5%a1%a5%e9%a5%f3TBR">ファラン</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b7%a5%e3%a5%aa%a5%e6%a5%a6TBR">シャオユウ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%af%a5%ea%a5%b9%a5%c6%a5%a3/%a5%a8%a5%c7%a5%a3TBR">クリスティ/エディ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%d5%a5%a7%a5%f3TBR">フェン</a></td></tr><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ec%a5%a4TBR">レイ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a1%bcTBR">リー</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%dd%a1%bc%a5%ebTBR">ポール</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ed%a5%a6TBR">ロウ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b9%a5%c6%a5%a3%a1%bc%a5%d6TBR">スティーブ</a></td></tr><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%de%a1%bc%a5%c9%a5%c3%a5%afTBR">マードック</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ad%a5%f3%a5%b0TBR">キング</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%a2%a1%bc%a5%de%a1%bc%a5%ad%a5%f3%a5%b0TBR">アーマーキング</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b8%a5%e5%a5%ea%a5%a2TBR">ジュリア</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%b4%e0%ce%b5TBR">巌竜</a></td></tr><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%cb%a1%bc%a5%caTBR">ニーナ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%a2%a5%f3%a5%caTBR">アンナ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%b5%c8%b8%f7TBR">吉光</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%d6%a5%e9%a5%a4%a5%a2%a5%f3TBR">ブライアン</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b8%a5%e3%a5%c3%a5%af6TBR">ジャック6</a></td></tr><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%af%a5%de/%a5%d1%a5%f3%a5%c0TBR">クマ/パンダ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ed%a5%b8%a5%e3%a1%bcJr%2eTBR">ロジャーJr.</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ef%a5%f3TBR">ワン</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%d6%a5%eb%a1%bc%a5%b9TBR">ブルース</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%da%a5%afTBR">ペク</a></td></tr><tr><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ec%a5%a4%a5%f4%a5%f3TBR">レイヴン</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%c9%a5%e9%a5%b0%a5%ce%a5%d5TBR">ドラグノフ</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%a5%c7%a5%d3%a5%eb%bf%ceTBR">デビル仁</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%ca%bf%c8%acTBR">平八</a></td><td><a href="http://seesaawiki.jp/w/inatekken/d/%cc%da%bf%cdTBR">木人</a></td></tr></tbody></table>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_2">総合の見方 <a title="部分編集" href="http://seesaawiki.jp/w/inatekken/e/edit?id=541688&part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="http://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif" /></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+<b>キャラ紹介</b><span style="color:#FF0000;">1</span><br />
+<table id="content_block_7"><tbody><tr><th><span style="color:#FF0000;">2</span>立ち合い</th><th>コンボ</th><th>スピード</th><th>リーチ</th><th>確反</th><th>扱い易さ</th></tr><tr><td>☆☆☆</td><td>☆☆☆</td><td>☆☆☆</td><td>☆☆☆</td><td>☆☆☆</td><td>☆☆☆</td></tr></tbody></table>
+<br />
+<b>10連コンボ</b><span style="color:#FF0000;">3</span><br />
+A　1発目10F<br />
+<br />
+<b>その他、メモ</b><span style="color:#FF0000;">4</span><br />
+<hr size="1" noshade="noshade" />
+<ol id="content_block_9" class="list-1">
+<li><b>キャラ紹介</b>：そのキャラクターの特徴を大雑把に解説</li>
+<li><b>キャラ性能</b>：対戦に必要となるキャラクターの性能を5段階評価。参考程度に</li>
+<li><b>10連コンボ</b>：キャラに必ず1つはある10連コンボを紹介。基本技や固有技と違って1〜10発を横表記</li>
+<li><b>その他、メモ</b>：ほかに気になる点など、メモ帳代わり</li>
+</ol>
+</div></div><div id="content_block_11" class="wiki-section-1"><div class="title-1"><h3 id="content_3">その他、備考 <a title="部分編集" href="http://seesaawiki.jp/w/inatekken/e/edit?id=541688&part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="http://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif" /></a></h3></div>
+<div id="content_block_11-body" class="wiki-section-body-1">
+<ul id="content_block_12" class="list-1">
+<li>木人は解説のみ</li>
+<li>クマとパンダは完全に一緒</li>
+<li>クリスティとエディは基本的に一緒（手足のリーチと一部投げ技のみ別）</li>
+</ul>
+</div></div>
+<div class="footer-footnote">
+<hr />
+<ul class="list-1">
+<li><a href="#footnote1" name="footer-footnote1">*1 </a> : 平八を除く</li>
+</ul>
+</div>
+</div>
+
+<!-- google_ad_section_end(name=s1) -->
+
+<div class="ads-box">
+  <ul>
+  <li>
+
+<!-- inner 左 9-->
+<script type="text/javascript" src="https://sda.seesaa.jp/frame/pG2tyL8a9e" charset="UTF-8"></script>
+</li>
+  <li>
+
+<!-- inner2 右-->
+<script type="text/javascript" src="https://sda.seesaa.jp/frame/1XANXrNC0f" charset="UTF-8"></script>
+</li>
+  </ul>
+</div>
+
+<div id="information-box"><p class="edit"><span><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/edit?id=541688">このページを編集する</a></span>&nbsp;&nbsp;<a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/add?id=541688">このページを元に新規ページを作成</a></p>
+<ul id="page-attachedfile">
+<li class="title"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/attachment?id=541688">添付する</a></li>
+<li><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/attachment/%c1%ed%b9%e7TBR">添付ファイル一覧（0）</a></li>
+</ul>
+<ul id="page-extra">
+<li class="print"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/dp/%c1%ed%b9%e7TBR" target="_blank">印刷する</a></li>
+</ul><!-- /ul#page-extra -->
+</div><!-- /#information-box -->
+
+<ul id="page-posted">
+</ul><!-- /ul#page-posted -->
+
+<div id="page-social-link-bottom"><span class="tumbler"><a title="このエントリーをTumblrにポストする" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='http://www.tumblr.com/share',l=d.location,e=encodeURIComponent,p='?v=3&u='+e(l.href) +'&t='+e(d.title) +'&s='+e(s),u=f+p;try{if(!/^(.*\.)?tumblr[^.]*$/.test(l.host))throw(0);tstbklt();}catch(z){a =function(){if(!w.open(u,'t','toolbar=0,resizable=0,status=1,width=450,height=430'))l.href=u;};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();}void(0);"><img src="http://image02.seesaawiki.jp/img/usr_second/common/bt_tumblr.gif?0.6.7" width="16" height="16" alt="このエントリーをTumblrにポスト" /></a></span><span class="evernote"><script type="text/javascript" src="http://static.evernote.com/noteit.js"></script><a href="#" onclick="Evernote.doClip({providerName:'総合TBR - ina tekken wiki - Seesaa Wiki（ウィキ）',suggestNotebook:'総合TBR - ina tekken wiki - Seesaa Wiki (ウィキ)',contentId:'page-container'}); return false;"><img src="http://static.evernote.com/site-mem-16.png" alt="Clip to Evernote" /></a></span><span class="yahoo"><a href="javascript:void window.open('http://bookmarks.yahoo.co.jp/bookmarklet/showpopup?t='+encodeURIComponent(document.title)+'&amp;u='+encodeURIComponent(location.href)+'&amp;ei=UTF-8','_blank','width=550,height=480,left=100,top=50,scrollbars=1,resizable=1',0);"><img src="http://i.yimg.jp/images/sicons/ybm16.gif" width="16" height="16" alt="Yahoo!ブックマークに登録" /></a></span><span class="hatena"><a href="http://b.hatena.ne.jp/entry/http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TBR" class="hatena-bookmark-button" data-hatena-bookmark-title="総合TBR - ina tekken wiki - Seesaa Wiki (ウィキ)" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></span>
+</div><!-- /page-social-link-bottom -->
+
+
+<ul id="page-category">
+<li class="title">カテゴリ：</li><li class="parent"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/c/9/">ゲーム</a></li><li class="child"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/c/3311/">鉄拳</a></li>
+</ul><!-- /ul#page-category -->
+<div id="page-toplink"><a href="#pagetop">総合TBR - ina tekken wiki 先頭へ</a></div>
+
+
+</div><!-- /.box-inner -->
+</div><!-- /#page-body -->
+
+<div id="page-footer"><div id="page-footer-inner" class="box-inner">&nbsp;</div><!-- /.box-inner --></div><!-- /#page-footer -->
+
+</div><!-- /.box-inner -->
+</div><!-- /#page-container -->
+
+</div><!-- /.column-inner -->
+</div><!-- /#main -->
+<!-- start of side -->
+<div id="sub" class="sidecolumn">
+<div class="column-inner">
+
+
+<!-- free_area -->
+
+<div class="free-box">
+<div class="box-inner">
+<div class="title"><h2>鉄拳タッグ2</h2></div>
+<div class="body">
+<div class="inner">
+ <div style="margin: 0px auto; text-align: center"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00F3X18YG/inatekken-22/ref=noism"><img src="http://ecx.images-amazon.com/images/I/61qoGf3Af8L._AA160_.jpg" title="鉄拳タッグトーナメント2 PlayStation 3 the Best" alt="B00F3X18YG.01.MZZZZZZZ.jpg" /><br/>Amazon</a> <a href="http://hb.afl.rakuten.co.jp/hgc/0aaad200.83152693.0aaad201.54404180/?pc=http%3a%2f%2fitem.rakuten.co.jp%2famiami%2fgame-0004646%2f%3fscid%3daf_link_txt&amp;m=http%3a%2f%2fm.rakuten.co.jp%2famiami%2fi%2f10445087%2f" target="_blank">楽天</a></div>
+
+</div><!-- /inner -->
+</div><!-- /.body -->
+</div><!-- /.box-inner -->
+</div><!-- /free-box -->
+
+
+<!-- /free_area -->
+
+
+<!-- menu_bar1 -->
+
+<div class="free-box">
+<div class="box-inner">
+<div class="title"><h2>コンテンツ</h2></div>
+<div class="body">
+<div class="inner">
+<div class="user-area">
+<div id="7577_block_1">
+<div class="toggle-title"><a id="region_plugin_7577_1" onClick="toggleRegion(this,'7577_block_1-inside');" class="toggle-link-close"><img src="http://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt="" /></a><p><a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7%b0%c6%c6%e2">総合案内</a></p></div>
+<div id="7577_block_1-inside" class="toggle-display">
+<a href="http://seesaawiki.jp/w/inatekken/d/%b4%d1%cd%f7%be%e5%a4%ce%c3%ed%b0%d5">観覧上の注意</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%c9%bd%c3%e6%a4%ce%ce%ac%be%ce">表中の略称</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%a5%c0%a5%a6%a5%f3%a1%a2%c9%e2%a4%ad%a4%ce%be%f5%c2%d6%a4%cb%a4%c4%a4%a4%a4%c6">やられ状態表記</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%c6%a5%f3%a5%c4%a4%ce%b8%ab%ca%fd">コンテンツの見方</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%a4%c1%a4%e7%a4%c3%a4%c8%a4%b7%a4%bf%c5%b4%b7%fd%cd%d1%b8%ec">ミニ鉄拳用語</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%a5%d5%a5%ec%a1%bc%a5%e0%a4%cb%a4%c4%a4%a4%a4%c6">フレームについて</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%a5%c7%a1%bc%a5%bf%bc%e8%a4%ea%b0%b7%a4%a4%a4%cb%a4%c4%a4%a4%a4%c6">データ取り扱い</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/wiki%ca%d4%bd%b8">wiki編集</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%a5%b5%a5%a4%a5%c8%a5%de%a5%c3%a5%d7">サイトマップ</a>
+</div>
+</div>
+<b>鉄拳7FR</b><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TFR">総合</a><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbTFR">基本技</a><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbTFR">固有技</a><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abTFR">投げ技ほか</a><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcTFR">コンボ</a><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2TFR">確定反撃</a><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afTFR">リスク</a><br />
+・<a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2TFR">主要技解説</a><br />
+<b>AC鉄拳7</b> | <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7T7">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbT7">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbT7">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abT7">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcT7">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2T7">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afT7">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2T7">主</a><br />
+<b>CS鉄拳TAG2</b>(UD)|<a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TUD">総</a>|<a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbTUD">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbTUD">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abTUD">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcTUD">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2TUD">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afTUD">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2TUD">主</a><br />
+<b>AC鉄拳TAG2</b>| <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TT2">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbTT2">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbTT2">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abTT2">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcTT2">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2TT2">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afTT2">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2TT2">主</a><br />
+<b>CS鉄拳6</b>(BR)| <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TBR">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbTBR">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbTBR">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abTBR">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcTBR">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2TBR">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afTBR">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2TBR">主</a><br />
+<b>AC鉄拳6</b> | <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7T6">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbT6">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbT6">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abT6">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcT6">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2T6">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afT6">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2T6">主</a><br />
+<b>鉄拳5DR</b> | <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TDR">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbTDR">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbTDR">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abTDR">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcTDR">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2TDR">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afTDR">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2TDR">主</a><br />
+<b>鉄拳5</b>(&<a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7T5%2e1">5.1</a>) | <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7T5">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbT5">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbT5">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abT5">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcT5">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2T5">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afT5">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2T5">主</a><br />
+<b>鉄拳4</b> | <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7T4">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbT4">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbT4">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abT4">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcT4">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2T4">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afT4">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2T4">主</a><br />
+<b>鉄拳TAG1</b> | <a href="http://seesaawiki.jp/w/inatekken/d/%c1%ed%b9%e7TT">総</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b4%f0%cb%dc%b5%bbTT">基</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%b8%c7%cd%ad%b5%bbTT">固</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%c5%ea%a4%b2%b5%bb%a4%db%a4%abTT">投</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%b3%a5%f3%a5%dcTT">コ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%b3%ce%c4%ea%c8%bf%b7%e2TT">確</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%a5%ea%a5%b9%a5%afTT">リ</a> | <a href="http://seesaawiki.jp/w/inatekken/d/%bc%e7%cd%d7%b5%bb%b2%f2%c0%e2TT">主</a><br />
+<div id="7577_block_3">
+<div class="toggle-title"><a id="region_plugin_7577_2" onClick="toggleRegion(this,'7577_block_3-inside');" class="toggle-link-open"><img src="http://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt="" /></a><p>その他</p></div>
+<div style="display:none" id="7577_block_3-inside" class="toggle-display">
+<a href="http://seesaawiki.jp/w/inatekken/d/%b9%b6%ce%ac%cb%dc">攻略本</a><br />
+┗<a href="http://seesaawiki.jp/w/inatekken/d/%b9%b6%ce%ac%cb%dc%c0%b5%b8%ed%c9%bd">正誤表</a><br />
+<a href="http://seesaawiki.jp/w/inatekken/d/%c5%b4%b7%fd%a5%ea%a5%f3%a5%af">鉄拳リンク</a>
+</div>
+</div>
+<table style="position:fixed;bottom:-10px;right:0px;" id="7577_block_5"><thead><tr><th style="vertical-align:top;"><a href="#pagetop">Top</a></th><th><a href="http://seesaawiki.jp/w/inatekken/"  >Home</a></th></tr></thead><tbody></tbody></table>
+</div>
+
+</div><!-- /inner -->
+</div><!-- /.body -->
+</div><!-- /.box-inner -->
+</div><!-- /free-box -->
+
+
+<!-- /menu_bar1 -->
+
+
+<!-- free_area -->
+
+<div class="free-box">
+<div class="box-inner">
+<div class="title"><h2>スティック</h2></div>
+<div class="body">
+<div class="inner">
+ <div style="margin: 0px auto; text-align: center">
+<a href="http://www.amazon.co.jp/dp/B00S94RODA?tag=inatekken-22" target="_blank"><img src="http://livedoor.blogimg.jp/inatekken/imgs/c/0/c05b2318.png" alt="RAPV4h" border="0" /></a>
+<hr/>
+
+<a href="http://www.amazon.co.jp/dp/B00QQQCDAC?tag=inatekken-22" target="_blank"><img src="http://livedoor.blogimg.jp/inatekken/imgs/8/3/83353ba7.png" alt="HAYABUSA" border="0" /></a>
+<hr/>
+
+<a href="http://www.amazon.co.jp/dp/B00O9GBKOG?tag=inatekken-22" target="_blank"><img src="http://livedoor.blogimg.jp/inatekken/imgs/2/6/26d8c153.png" alt="MCAFSTE2" border="0" /></a>
+<hr/>
+
+<a href="http://www.amazon.co.jp/dp/B00BMXMBDS?tag=inatekken-22" target="_blank"><img src="http://livedoor.blogimg.jp/inatekken/imgs/2/e/2ee58134.png" alt="MC3FCP" border="0" /></a>
+</div>
+</div><!-- /inner -->
+</div><!-- /.body -->
+</div><!-- /.box-inner -->
+</div><!-- /free-box -->
+
+
+<!-- /free_area -->
+
+
+<!-- recent_content -->
+
+<div class="side-box recent">
+<div class="box-inner">
+<div class="title"><h2>更新履歴</h2></div>
+<div class="body">
+<div class="inner">
+<ul class="parent-list">
+
+<li><h3>2016-02-16</h3><ul class="child-list">
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ec%a5%aa%b3%ce%c4%ea%c8%bf%b7%e2TFR">レオ確定反撃TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ec%a5%aa%b8%c7%cd%ad%b5%bbTFR">レオ固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%af%a5%e9%a5%a6%a5%c7%a5%a3%a5%aa%b4%f0%cb%dc%b5%bbTFR">クラウディオ基本技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%af%a5%e9%a5%a6%a5%c7%a5%a3%a5%aa%b8%c7%cd%ad%b5%bbTFR">クラウディオ固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b7%a5%e3%a5%d2%a1%bc%a5%f3%b8%c7%cd%ad%b5%bbTFR">シャヒーン固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ae%a5%ac%a1%bc%a5%b9%b3%ce%c4%ea%c8%bf%b7%e2TFR">ギガース確定反撃TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%b5%c8%b8%f7%a5%b3%a5%f3%a5%dcTFR">吉光コンボTFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%b5%c8%b8%f7%b8%c7%cd%ad%b5%bbTFR">吉光固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%cb%a1%bc%a5%ca%b4%f0%cb%dc%b5%bbTUD">ニーナ基本技TUD</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%cb%a1%bc%a5%ca%b8%c7%cd%ad%b5%bbTUD">ニーナ固有技TUD</a></li>
+</ul></li>
+
+<li><h3>2016-02-15</h3><ul class="child-list">
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%c9%a5%e9%a5%b0%a5%ce%a5%d5%b8%c7%cd%ad%b5%bbTFR">ドラグノフ固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%b9%eb%b5%b4%b8%c7%cd%ad%b5%bbTFR">豪鬼固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ae%a5%ac%a1%bc%a5%b9%b4%f0%cb%dc%b5%bbTFR">ギガース基本技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%ae%a5%ac%a1%bc%a5%b9%b8%c7%cd%ad%b5%bbTFR">ギガース固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b8%a5%e3%a5%c3%a5%af7%b8%c7%cd%ad%b5%bbTFR">ジャック7固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b8%a5%e3%a5%c3%a5%af7%b4%f0%cb%dc%b5%bbTFR">ジャック7基本技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b8%a5%e3%a5%c3%a5%af7%a5%b3%a5%f3%a5%dcTFR">ジャック7コンボTFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b7%a5%e3%a5%aa%a5%e6%a5%a6%b8%c7%cd%ad%b5%bbTFR">シャオユウ固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%b7%a5%e3%a5%aa%a5%e6%a5%a6%a5%b3%a5%f3%a5%dcTFR">シャオユウコンボTFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%b5%c8%b8%f7%b4%f0%cb%dc%b5%bbTFR">吉光基本技TFR</a></li>
+</ul></li>
+
+<li><h3>2016-02-14</h3><ul class="child-list">
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%d5%a5%a1%a5%e9%a5%f3%b8%c7%cd%ad%b5%bbTFR">ファラン固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%af%a5%ed%a5%a8%b4%f0%cb%dc%b5%bbTFR">クロエ基本技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%a5%af%a5%ed%a5%a8%b8%c7%cd%ad%b5%bbTFR">クロエ固有技TFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%b9%eb%b5%b4%a5%b3%a5%f3%a5%dcTFR">豪鬼コンボTFR</a></li>
+
+
+
+<li><a href="http://seesaawiki.jp/w/inatekken/d/%ca%bf%c8%ac%a5%b3%a5%f3%a5%dcTFR">平八コンボTFR</a></li>
+</ul></li></ul>
+</div><!-- /inner -->
+</div><!-- /.body -->
+</div><!-- /.box-inner -->
+</div><!-- /side-box -->
+
+
+<!-- /recent_content -->
+
+
+<!-- free_area -->
+
+<div class="free-box">
+<div class="box-inner">
+<div class="title"><h2>Amazon</h2></div>
+<div class="body">
+<div class="inner">
+ <div style="margin: 0px auto; text-align: center"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab" id="Player_09e853b5-8aff-40d5-b712-11fad6f2dfdf"  WIDTH="120px" HEIGHT="500px"> <PARAM NAME="movie" VALUE="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Finatekken-22%2F8010%2F09e853b5-8aff-40d5-b712-11fad6f2dfdf&Operation=GetDisplayTemplate"><PARAM NAME="quality" VALUE="high"><PARAM NAME="bgcolor" VALUE="#FFFFFF"><PARAM NAME="allowscriptaccess" VALUE="always"><embed src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Finatekken-22%2F8010%2F09e853b5-8aff-40d5-b712-11fad6f2dfdf&Operation=GetDisplayTemplate" id="Player_09e853b5-8aff-40d5-b712-11fad6f2dfdf" quality="high" bgcolor="#ffffff" name="Player_09e853b5-8aff-40d5-b712-11fad6f2dfdf" allowscriptaccess="always"  type="application/x-shockwave-flash" align="middle" height="500px" width="120px"></embed></OBJECT> <NOSCRIPT><A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Finatekken-22%2F8010%2F09e853b5-8aff-40d5-b712-11fad6f2dfdf&Operation=NoScript">Amazon.co.jp ウィジェット</A></NOSCRIPT></div>
+</div><!-- /inner -->
+</div><!-- /.body -->
+</div><!-- /.box-inner -->
+</div><!-- /free-box -->
+
+
+<!-- /free_area -->
+
+
+<!-- recent_comments -->
+
+
+<div class="side-box comment">
+<div class="box-inner">
+<div class="title"><h2>最新コメント</h2></div>
+<div class="body">
+<div class="inner">
+<ul>
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+</ul>
+</div><!-- /inner -->
+</div><!-- /.body -->
+</div><!-- /.box-inner -->
+</div><!-- /side-box -->
+
+
+<!-- /recent_comments -->
+
+
+<div class="side-box qrcode">
+  <div class="box-inner">
+    <div class="title"><h2>QRコード</h2></div>
+    <div class="body">
+      <div class="inner">
+        <div id="qrcode"></div>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </div>
+</div>
+
+
+<script type="text/javascript" src="http://static.seesaawiki.jp/js/qrcode.min.js?0.6.7"></script> 
+<script type="text/javascript">
+new QRCode("qrcode", {
+  text: "http://seesaawiki.jp/w/inatekken/",
+  width: 114,
+  height: 114
+});
+</script>
+
+
+</div><!-- /.column-inner -->
+</div><!-- /#sub -->
+
+<div id="extra" class="sidecolumn">
+<div class="column-inner">
+
+
+
+<div class="side-box side-analyzer">
+<div class="box-inner">
+<div class="title"><h2>アクセス解析中</h2></div>
+<div class="body">
+<div class="inner">
+<div id="analyzer-side-box" class="analyzer-color-blue">
+<div class="analyzer-title">PR Wiki</div>
+<div class="analyzer-side-box-inner">
+<ul id="wikisense"><!-- GENERATE WITH JS --></ul>
+<div class="analyzer-banner"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/analyzer/" title="ina tekken wiki・アクセス解析"><img src="http://image02.seesaawiki.jp/img/usr_second/common/analyzer/bnr_blue.gif?0.6.7" width="150" height="32" alt="Wikiアクセス解析" /></a></div>
+</div><!-- /analyzer-side-box-inner -->
+</div><!-- /analyzer-side-box -->
+
+<script src="http://wiki.seesaa.jp/wikisense/?callback=WikiSense.callback&category_id=9&adult=0&ignore_id=5021"></script>
+</div><!-- /inner -->
+</div><!-- /.body -->
+</div><!-- /.box-inner -->
+</div><!-- /side-box -->
+
+
+
+</div><!-- /.column-inner -->
+</div><!-- /#extra -->
+
+<!-- end of side -->
+
     
-  </body>
+    
+
+
+</div><!-- /#content -->
+
+
+
+
+</div><!-- /#wiki-container -->
+<div id="common-footer">
+<div class="column-inner">
+
+
+<p class="display-change" id="display-change" style="display: none;"><a id="smartphone-view" href="javascript:void(0);" onclick="switchView.doSwitch();" >スマートフォン版で見る</a></p>
+<ul>
+<li><a href="http://seesaawiki.jp/w/inatekken/">ina tekken wiki</a>&nbsp;｜&nbsp;</li><li>powered by <a href="http://wiki.seesaa.jp">Seesaa Wiki</a></li>
+</ul>
+</div><!-- /.column-inner -->
+</div><!-- /#common-footer -->
+
+
+
+<div id="common-header">
+<div class="header-logo"><a href="http://wiki.seesaa.jp" title="Seesaa Wiki（ウィキ） ゲーム攻略に便利な無料Wikiサービス"><img src="http://image01.seesaawiki.jp/img/usr_second/common/header_logo.png?0.6.7" width="115" height="18" alt="Seesaa Wiki" /></a></div>
+
+
+<ul id="navigation-h">
+<li class="nav"><a href="javascript:void(0);" class="nav-new"><span class="caret">新規ページ</span></a>
+<ul>
+<li><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/add">新規ページを作成する</a></li>
+<li><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/add?id=541688">このページを元に新規ページを作成する</a></li>
+</ul>
+</li>
+<li class="nav">
+
+<a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/e/edit?id=541688" class="nav-edit" title="編集（livedoor IDのログインが必要です）">編集</a></li>
+
+<li class="nav">
+<a rel="nofollow" class="nav-attachment" href="http://seesaawiki.jp/w/inatekken/e/attachment?id=541688">添付</a>
+</li>
+
+<li class="nav"><a href="javascript:void(0);" class="nav-setting"><span class="caret">設定</span></a>
+<ul>
+<li>
+<a rel="nofollow" href="http://cms.wiki.seesaa.jp/cms/login/?full=1&amp;id=541688&amp;wiki_id=5021">ページの設定</a></li>
+<li><a rel="nofollow" href="http://cms.wiki.seesaa.jp/cms/preference/input?wiki_id=5021">Wikiの管理</a></li>
+</ul>
+</li>
+
+<li class="nav"><a href="javascript:void(0);" class="nav-help"><span class="caret">ヘルプ</span></a>
+<ul>
+<li><a href="http://seesaawiki.jp/w/tag_guide/" title="Seesaa Wiki 簡単記法リファレンス" target="_blank">Wiki記法リファレンス</a></li>
+<li><a href="http://seesaawiki.jp/w/staff_wiki/d/" title="Seesaa Wiki ガイドWiki" target="_blank">ガイドWiki</a></li>
+<li><a href="http://seesaawiki.jp/w/livedoor256789/d/" title="Seesaa Wiki 開発日誌" target="_blank">Seesaa Wikiからのお知らせ</a></li>
+</ul>
+</li>
+
+</ul>
+<div class="member"><p>編集にはIDが必要です</p></div>
+<div id="ad-gamesq"><a href="http://gamesq.jp" target="_blank">スキ！で繋がる ゲーム専門SNS</a></div>
+
+<ul id="header-signup">
+<li class="mypage"><a rel="nofollow" href="http://my.wiki.seesaa.jp">マイページ</a></li>
+<li class="signup"><a rel="nofollow" href="http://wiki.seesaa.jp/signup/">新規登録</a></li>
+</ul>
+</div>
+
+
+</div><!-- /#container --><div id="header-sticker"><a rel="nofollow" href="http://seesaawiki.jp/w/inatekken/members/" title="メンバー募集！">メンバー募集！</a></div>
+
+<script type="text/javascript">prettyPrint();</script>
+
+<div id="wiki-message-outer">
+<div id="wiki-message">
+<div id="wiki-message-button"><a href="#" id="wiki-message-close-button" title="閉じる"><img src="http://image02.seesaawiki.jp/img/usr_second/common/message/btn_close.gif?0.6.7" width="19" height="18" alt="閉じる" /></a></div>
+<div id="wiki-message-inner">
+<div id="wiki-message-title"><div id=" id="wiki-message-title-inner">
+お知らせ
+</div></div><!-- /wiki-message-title -->
+<div id="wiki-message-body"><div id="wiki-message-body-inner">
+鉄拳7FRページ仮公開中<br/>ロケテ情報なので注意<br/>SeesaaIDで編集可能です
+</div></div><!-- /wiki-message-body -->
+</div></div><!-- /wiki-message -->
+</div><!-- /wiki-message-outer -->
+
+<script type="text/javascript" src="/js/usr/sticker.js?1"></script>
+<script type="text/javascript">
+//var above_element = document.getElementById("common-header") || document.getElementById("header");
+var is_ie6 = /MSIE 6.0/.test(navigator.userAgent) ? true : false;
+if (!is_ie6) {
+    var sticker = new LDWSticker();
+    sticker.display({
+        key: "4928fcd06e",
+        path: "/w/inatekken/",
+        script_footer: false,
+        body_id: "wiki-message-outer",
+        hidden_id: "wiki-message-close-button", 
+        style: { }
+    });
+}
+</script>
+
+
+
+<script type="text/javascript" charset="euc-jp" src="http://static.seesaawiki.jp/js/smartphone_view.js?0.6.7"></script>
+<script type="text/javascript">
+var switchView = new smartphoneView();
+</script>
+<script> 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-40784378-1', 'auto'); 
+ga('set', 'dimension1', 'game');
+
+ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+var url = document.URL;
+document.write("<img src='http://d3tj8z0fmvk24c.cloudfront.net/t.gif?url=" + encodeURIComponent(url) + "' />");
+</script>
+<script src="http://a.adimg.net/javascripts/AdLantisLoader.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="https://sda.seesaa.jp/frame/vYN5_OM-bI" charset="UTF-8"></script>
+</body>
 </html>
+
+
